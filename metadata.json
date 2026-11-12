@@ -1,0 +1,6 @@
+{
+  "name": "Zoho-Style Tech Blog & CMS",
+  "description": "Full stack corporate technology blog inspired by Zoho Blog with category navigation, rich reading experience, SEO metadata, and full-featured Admin CMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
