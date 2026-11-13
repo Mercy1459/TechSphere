@@ -42,6 +42,9 @@ export default function App() {
 
   useEffect(() => {
     refreshData();
+    if (window.location.pathname === '/admin') {
+      setCurrentView('admin');
+    }
   }, []);
 
   // Filter Published Posts for Public Views
