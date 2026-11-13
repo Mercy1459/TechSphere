@@ -29,7 +29,7 @@ export default function App() {
   const [authors, setAuthors] = useState<Author[]>([]);
   
   // Navigation State
-  const [currentView, setCurrentView] = useState<'home' | 'articles' | 'detail' | 'admin' | 'guide'>('home');
+  const [currentView, setCurrentView] = useState<'home' | 'articles' | 'detail' | 'admin' | 'guide'>(window.location.pathname === '/admin' ? 'admin' :'home');
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 

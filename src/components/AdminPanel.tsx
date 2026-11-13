@@ -58,7 +58,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
   });
 
   const [authEmail, setAuthEmail] = useState('admin@zentec.io');
-  const [authPassword, setAuthPassword] = useState('admin123');
+  const [authPassword, setAuthPassword] = useState('mercy@2006');
   const [authError, setAuthError] = useState('');
 
   // Active Admin Tab
@@ -144,10 +144,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
   // Handle Login
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (authEmail.trim() === 'admin@zentec.io' && authPassword === 'admin123') {
+    if (authEmail.trim() === 'admin@zentec.io' && authPassword === 'mercy@2006') {
       signIn(authEmail.trim());
     } else {
-      setAuthError('Invalid credentials. Use admin@zentec.io / admin123');
+      setAuthError('Invalid credentials. Use admin@zentec.io / mercy@2006');
     }
   };
 
